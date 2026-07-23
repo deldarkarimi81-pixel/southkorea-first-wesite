@@ -27,7 +27,7 @@
 
     @font-face {
         font-family: "danc";
-        src: url(./fontstyls/DancingScript-VariableFont_wght.ttf);
+        src: url(DancingScript-VariableFont_wght.ttf);
     }
 
     .nav ul li a {
@@ -114,7 +114,7 @@
       margin: 20px;
     }
     body{
-        background-image: url(./images/4photoshop-food-vector-pack2-وکتور-غذا-پک2.jpg);
+        background-image: url(4photoshop-food-vector-pack2-وکتور-غذا-پک2.jpg);
     }
 
 @media screen and (max-width:992px){
