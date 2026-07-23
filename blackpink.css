@@ -26,7 +26,7 @@
 
     @font-face {
         font-family: "tin";
-        src: url(./Roboto-Thin.ttf);
+        src: url(Roboto-Thin.ttf);
     }
 
     .nav ul li a {
@@ -103,7 +103,7 @@
 
     @font-face {
         font-family: "dansi";
-        src: url(./fontstyls/DancingScript-VariableFont_wght.ttf);
+        src: url(DancingScript-VariableFont_wght.ttf);
 
     }
 
@@ -121,7 +121,7 @@
     }
 
     body {
-        background-image: url(./images/نوشته\ بلک\ پینک\ 2.jpg);
+        background-image: url(نوشته\ بلک\ پینک\ 2.jpg);
         background-size: 200px;
         background-repeat: repeat;
         background-position: center;
