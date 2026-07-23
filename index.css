@@ -1,0 +1,328 @@
+     * {
+         padding: 0;
+         margin: 0;
+         box-sizing: border-box;
+     }
+
+     nav {
+         position: sticky;
+         z-index: 1000;
+         top: 0;
+         width: 100%;
+         background-color: rgb(136, 240, 136);
+         display: flex;
+         justify-content: space-between;
+     }
+
+     .nav ul {
+         width: 60%;
+         list-style-type: none;
+         display: flex;
+     }
+
+     .nav ul li {
+         flex-grow: 1;
+     }
+
+
+     .nav ul li a {
+         display: block;
+         font-style: italic;
+         text-transform: uppercase;
+         color: white;
+         text-decoration: none;
+         font-weight: bold;
+         padding: 16px;
+         font-size: 22px;
+         text-align: center;
+     }
+
+     .nav ul li a:hover {
+         background-color: white;
+         color: greenyellow;
+         border-radius: 5px;
+         box-shadow: 2px 3px 4px rgb(115, 245, 173);
+     }
+
+     .nav div.icons {
+         width: 10%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+
+     div.icons span {
+         font-size: 2rem;
+         color: white;
+         padding-top: 10px;
+         padding-right: 10px;
+     }
+
+     .nav ul li span {
+         margin-right: 10px;
+     }
+
+     div.mapp {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-top: 70px;
+     }
+
+     body {
+         background-image: url(./images/ggg.jpeg);
+         background-size: 500px;
+     }
+
+     div.mapp img {
+         border: 8px dashed rgba(0, 0, 0, 0.538);
+     }
+
+     .container {
+         display: flex;
+         justify-content: space-around;
+         margin-top: 30px;
+         border-top: 5px solid rgb(147, 248, 147);
+         margin-bottom: 90px;
+
+     }
+
+     .box {
+         width: 400px;
+         height: 450px;
+         margin: 10px;
+     }
+
+     figure,
+     figure img,
+     figure figcaption {
+         width: 350px;
+         height: 450px;
+         border-radius: 9px;
+     }
+
+     figure {
+         margin: 40px auto;
+         font-family: sans-serif;
+         position: relative;
+         overflow: hidden;
+     }
+
+     figcaption {
+         background-color: rgba(255, 255, 255, 0.133);
+         backdrop-filter: blur(40px);
+         padding: 30px;
+         position: absolute;
+         top: 100%;
+         color: white;
+         transition: 2s;
+         font-size: 1.2rem;
+     }
+
+     figure figcaption h2 {
+         margin-bottom: 10px;
+     }
+
+     figure figcaption p {
+         line-height: 1.5;
+         text-align: justify;
+     }
+
+     figure:hover figcaption {
+         top: 0;
+     }
+
+     footer {
+         width: 100%;
+         height: 50px;
+         background-color: rgb(136, 240, 136);
+         bottom: 0;
+         margin-top: 20px;
+
+     }
+
+     footer i {
+         font-family: sans-serif;
+         text-transform: capitalize;
+         color: white;
+         font-size: 1rem;
+         padding: 10px;
+     }
+
+     footer span {
+         width: 200px;
+         color: white;
+         font-size: 1.5rem;
+         padding: 10px;
+     }
+
+     h1.seoul {
+         text-align: center;
+         padding: 5px;
+         margin-bottom: 10px;
+         font-size: 1.5rem;
+         color: rgb(16, 205, 16);
+         text-transform: uppercase;
+         background-color: white;
+         border-radius: 20px;
+     }
+
+     h1.jejo {
+         text-align: center;
+         padding: 5px;
+         margin-bottom: 10px;
+         font-size: 1.5rem;
+         color: rgb(16, 205, 16);
+         text-transform: uppercase;
+         background-color: white;
+         border-radius: 20px;
+     }
+
+     h1.busan {
+         text-align: center;
+         padding: 5px;
+         margin-bottom: 10px;
+         font-size: 1.5rem;
+         color: rgb(16, 205, 16);
+         text-transform: uppercase;
+         background-color: white;
+         border-radius: 20px;
+     }
+
+     @media screen and (max-width:992px) {
+
+         .container {
+             flex-wrap: wrap;
+             justify-content: center;
+         }
+
+         .box {
+             width: 350px;
+         }
+
+         figure,
+         figure img,
+         figure figcaption {
+             width: 320px;
+         }
+
+         div.mapp img {
+             width: 80%;
+             height: auto;
+         }
+
+         .nav ul {
+             width: 75%;
+         }
+
+         .nav ul li a {
+             font-size: 18px;
+             padding: 14px;
+         }
+
+         div.icons span {
+             font-size: 1.6rem;
+         }
+
+     }
+
+     @media screen and (max-width:768px) {
+
+         nav {
+             flex-direction: column;
+             align-items: center;
+         }
+
+         .nav {
+             width: 100%;
+         }
+
+         .nav ul {
+             width: 100%;
+             flex-direction: column;
+         }
+
+         .nav ul li {
+             width: 100%;
+         }
+
+         .nav ul li a {
+             font-size: 18px;
+             padding: 12px;
+         }
+
+         .icons {
+             margin: 10px 0;
+         }
+
+         div.mapp {
+             margin-top: 250px;
+         }
+
+         div.mapp img {
+             width: 95%;
+             height: auto;
+         }
+
+         .container {
+             flex-direction: column;
+             align-items: center;
+         }
+
+         .box {
+             width: 100%;
+             height: auto;
+         }
+
+         figure,
+         figure img,
+         figure figcaption {
+             width: 90%;
+             height: 420px;
+         }
+
+         footer {
+             height: auto;
+             text-align: center;
+             padding: 10px;
+         }
+
+     }
+
+     @media screen and (max-width:480px) {
+
+         .nav ul li a {
+             font-size: 16px;
+         }
+
+         div.icons span {
+             font-size: 1.3rem;
+         }
+
+         figure,
+         figure img,
+         figure figcaption {
+             width: 95%;
+             height: 380px;
+         }
+
+         figcaption {
+             font-size: 1rem;
+             padding: 20px;
+         }
+
+         h1.seoul,
+         h1.jejo,
+         h1.busan {
+             font-size: 1.2rem;
+         }
+
+         footer i {
+             font-size: .8rem;
+         }
+
+         footer span {
+             font-size: 1.2rem;
+         }
+
+     }

@@ -1,0 +1,464 @@
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+ nav {
+     position: fixed;
+     top: 0;
+     width: 100%;
+     background-color: rgb(20, 106, 217);
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .nav ul {
+     width: 60%;
+     list-style-type: none;
+     display: flex;
+ }
+
+ div.all {
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+ }
+
+ div.count {
+
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+     margin-top: 50px;
+
+ }
+
+ body {
+     background-image: url(./images/blue\ back.jpg);
+ }
+
+ .nav ul li {
+     flex-grow: 1;
+ }
+
+ @font-face {
+     font-family: "tin";
+     src: url(./fontstyls/Roboto-ThinItalic.ttf);
+ }
+
+ .nav ul li a {
+     display: block;
+     font-family: "tin";
+     text-transform: uppercase;
+     color: white;
+     text-decoration: none;
+     font-weight: bold;
+     padding: 16px;
+     font-size: 22px;
+     text-align: center;
+     background-color: rgb(20, 106, 217);
+ }
+
+ .nav ul li a:hover {
+     background-color: white;
+     color: rgba(111, 188, 243, 0.67);
+     border-radius: 5px;
+     box-shadow: 2px 3px 4px rgb(192, 255, 252);
+ }
+
+ .nav div.icons {
+     width: 10%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+
+ div.icons span {
+     font-size: 2rem;
+     color: white;
+     padding-top: 10px;
+     padding-right: 10px;
+ }
+
+ .nav ul li span {
+     margin-right: 10px;
+ }
+
+ div.hanbok {
+     width: 900px;
+     height: 600px;
+     margin: 70px;
+     background-image: url(./images/seoul\ place.jpeg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     transition: 3s;
+ }
+
+ div.all-hanbok {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ div.hanbok:hover {
+     background-image: url(./images/hanbok\ 2\ girls.jpeg);
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+
+ h1 {
+     font-family: sans-serif;
+     font-style: italic;
+     font-size: 1.8rem;
+     text-transform: capitalize;
+     text-align: center;
+     color: white;
+     padding: 20px;
+ }
+
+ div.img {
+     width: 900px;
+     height: 900px;
+     background-color: rgba(137, 43, 226, 0.257);
+     border-radius: 50%;
+     background-image: url(./images/hanbok\ men\ women.jpeg);
+     background-repeat: no-repeat;
+     background-position: center;
+     margin-left: 20px;
+ }
+
+ div.matn {
+     width: 400px;
+     height: 900px;
+     background-color: rgba(56, 57, 57, 0.414);
+     margin-right: 40px;
+     border-radius: 10px;
+ }
+
+ div.para {
+     width: 40%;
+     height: 600px;
+     background-image: url(./images/heriung.jpeg);
+     background-repeat: no-repeat;
+     transition: 3s;
+ }
+
+ div.lebas {
+
+     width: 60%;
+     height: 600px;
+     background-color: rgba(59, 19, 139, 0.312);
+     overflow: scroll;
+ }
+
+ div.para:hover {
+     background-image: url(./images/chona.jpeg);
+     background-repeat: no-repeat;
+     background-position: center;
+ }
+
+ div.matn {
+     font-size: 1.5rem;
+     text-transform: capitalize;
+     font-style: italic;
+     color: whitesmoke;
+     overflow: scroll;
+ }
+
+ div.matn p {
+     padding: 10px;
+     text-align: center
+ }
+
+ div.lebas p {
+     font-size: 1.5rem;
+     color: aliceblue;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     padding: 10px;
+     text-align: center;
+ }
+
+ figure,
+ figure img,
+ figure figcaption {
+     width: 400px;
+     border-radius: 9px;
+     background-color: white;
+ }
+
+ figure {
+     margin: 40px auto;
+     font-family: sans-serif;
+ }
+
+ figure figcaption p {
+     line-height: 1.5;
+     text-align: justify;
+     padding: 10px;
+ }
+
+ figure:hover figcaption {
+     top: 0;
+ }
+
+ div.cont {
+     display: flex;
+     justify-content: space-around;
+     margin-top: 30px;
+ }
+
+ a.fo {
+     padding: 10px;
+     text-align: center;
+     background-color: skyblue;
+     color: rgb(255, 255, 255);
+     text-decoration: none;
+     display: block;
+     font-family: sans-serif;
+     text-transform: uppercase;
+ }
+
+ a.fo:hover {
+     background-color: rgb(2, 10, 74);
+     color: rgb(33, 200, 212);
+     box-shadow: 2px 3px 4px rgb(100, 178, 250);
+ }
+
+ footer {
+     width: 100%;
+     height: 50px;
+     background-color: rgb(20, 106, 217);
+ }
+
+ footer i {
+     font-family: sans-serif;
+     text-transform: capitalize;
+     color: white;
+     font-size: 1rem;
+     padding: 10px;
+ }
+
+ footer span {
+     width: 200px;
+     color: white;
+     font-size: 1.5rem;
+     padding: 10px;
+ }
+
+@media screen and (max-width:768px){
+
+    nav{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .nav{
+        width:100%;
+    }
+
+    .nav ul{
+        width:100%;
+        flex-direction:column;
+    }
+
+    .nav ul li{
+        width:100%;
+    }
+
+    .nav ul li a{
+        font-size:18px;
+        padding:12px;
+    }
+
+    .icons{
+        margin:10px 0;
+    }
+
+    div.hanbok{
+        width:95%;
+        height:350px;
+        margin-top:250px;
+    }
+
+    div.img{
+        width:320px;
+        height:320px;
+        background-size:cover;
+    }
+
+    div.matn{
+        width:95%;
+        height:auto;
+        font-size:1.2rem;
+    }
+
+    div.all{
+        flex-direction:column;
+    }
+
+    div.count{
+        flex-direction:column;
+    }
+
+    div.para,
+    div.lebas{
+        width:100%;
+        height:auto;
+    }
+
+    div.cont{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    figure,
+    figure img,
+    figure figcaption{
+        width:90%;
+    }
+
+    footer{
+        height:auto;
+        text-align:center;
+        padding:10px;
+    }
+
+}
+
+@media screen and (max-width:768px){
+
+    nav{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .nav{
+        width:100%;
+    }
+
+    .nav ul{
+        width:100%;
+        flex-direction:column;
+    }
+
+    .nav ul li{
+        width:100%;
+    }
+
+    .nav ul li a{
+        font-size:18px;
+        padding:12px;
+    }
+
+    .icons{
+        margin:10px 0;
+    }
+
+    div.hanbok{
+        width:95%;
+        height:350px;
+        margin-top:250px;
+    }
+
+    div.img{
+        width:320px;
+        height:320px;
+        background-size:cover;
+    }
+
+    div.matn{
+        width:95%;
+        height:auto;
+        font-size:1.2rem;
+    }
+
+    div.all{
+        flex-direction:column;
+    }
+
+    div.count{
+        flex-direction:column;
+    }
+
+    div.para,
+    div.lebas{
+        width:100%;
+        height:auto;
+    }
+
+    div.cont{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    figure,
+    figure img,
+    figure figcaption{
+        width:90%;
+    }
+
+    footer{
+        height:auto;
+        text-align:center;
+        padding:10px;
+    }
+
+}
+@media screen and (max-width:992px){
+
+    .nav ul{
+        width:75%;
+    }
+
+    .nav ul li a{
+        font-size:18px;
+    }
+
+    div.icons span{
+        font-size:1.6rem;
+    }
+
+    div.hanbok{
+        width:90%;
+        height:500px;
+        margin:90px auto 30px;
+    }
+
+    div.count{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    div.img{
+        width:600px;
+        height:600px;
+        margin:20px auto;
+    }
+
+    div.matn{
+        width:90%;
+        height:auto;
+        margin:20px auto;
+    }
+
+    div.all{
+        flex-direction:column;
+    }
+
+    div.para,
+    div.lebas{
+        width:100%;
+    }
+
+    div.cont{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    figure{
+        margin:20px;
+    }
+
+}

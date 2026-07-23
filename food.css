@@ -1,0 +1,234 @@
+ 
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    nav {
+        position: fixed;
+        width: 100%;
+        background-color: rgba(255, 68, 0, 0.842);
+        display: flex;
+        justify-content: space-between; position: fixed;
+        top: 0;
+
+    }
+
+    .nav ul {
+        width: 60%;
+        list-style-type: none;
+        display: flex;
+    }
+
+    .nav ul li {
+        flex-grow: 1;
+    }
+
+    @font-face {
+        font-family: "danc";
+        src: url(./fontstyls/DancingScript-VariableFont_wght.ttf);
+    }
+
+    .nav ul li a {
+        display: block;
+        font-family: "danc";
+        text-transform: uppercase;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 16px;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .nav ul li a:hover {
+        background-color: white;
+        color: orange;
+        border-radius: 5px;
+        box-shadow: 2px 3px 4px rgb(237, 188, 128);
+    }
+
+    .nav div.icons {
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.icons span {
+        font-size: 2rem;
+        color: white;
+        padding-top: 10px;
+        padding-right: 10px;
+    }
+
+    .nav ul li span {
+        margin-right: 10px;
+    }
+
+    footer {
+        width: 100%;
+        height: 50px;
+        background-color:rgba(255, 68, 0, 0.842);
+        bottom: 0;
+        margin-top: 20px;
+
+    }
+
+    footer i {
+        font-family: sans-serif;
+        text-transform: capitalize;
+        color: white;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    footer span {
+        width: 200px;
+        color: white;
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+   
+    .container {
+      width: 1000px;
+      background-color: rgba(255, 255, 255, 0.847);
+      margin: 70px auto;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    .container div.innerbox {
+      border: 1px solid orange;
+      padding: 20px;
+      border-radius: 5px;
+
+    }
+
+    .container div.innerbox img {
+      border-radius: 5px;
+      border: 1px solid orange;
+      width: 250px;
+      height: 250px;
+      padding: 10px;
+      margin: 20px;
+    }
+    body{
+        background-image: url(./images/4photoshop-food-vector-pack2-وکتور-غذا-پک2.jpg);
+    }
+
+@media screen and (max-width:992px){
+
+    .container{
+        width:90%;
+    }
+
+    .innerbox{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .container div.innerbox img{
+        width:220px;
+        height:220px;
+        margin:15px;
+    }
+
+    .nav ul{
+        width:75%;
+    }
+
+    .nav ul li a{
+        font-size:18px;
+    }
+
+    div.icons span{
+        font-size:1.6rem;
+    }
+
+}
+
+@media screen and (max-width:768px){
+
+    nav{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .nav{
+        width:100%;
+    }
+
+    .nav ul{
+        width:100%;
+        flex-direction:column;
+    }
+
+    .nav ul li{
+        width:100%;
+    }
+
+    .nav ul li a{
+        font-size:18px;
+        padding:12px;
+    }
+
+    .icons{
+        margin:10px 0;
+    }
+
+    .container{
+        width:95%;
+        margin-top:260px;
+    }
+
+    .innerbox{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .container div.innerbox img{
+        width:90%;
+        height:auto;
+        margin:10px 0;
+    }
+
+    footer{
+        height:auto;
+        text-align:center;
+        padding:10px;
+    }
+
+}
+
+@media screen and (max-width:480px){
+
+    .nav ul li a{
+        font-size:16px;
+    }
+
+    div.icons span{
+        font-size:1.3rem;
+    }
+
+    .container{
+        width:100%;
+        padding:10px;
+    }
+
+    .container div.innerbox img{
+        width:100%;
+        padding:5px;
+    }
+
+    footer i{
+        font-size:.8rem;
+    }
+
+    footer span{
+        font-size:1.2rem;
+    }
+
+}
